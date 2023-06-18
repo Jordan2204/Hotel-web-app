@@ -83,7 +83,7 @@
                     </div>
     </section>
     <br/>
-     <section class="tm-roomsection">
+     <section onclick="window.dataLayer.push({'event': 'View hotel'})" class="tm-roomsection">
                     <div class="tm-room1">
                         
                         <div class="tm-trans"> <div><p>2 Bed</p><p>Free wifi</p><p>Fresh towels</p> </div>
@@ -165,3 +165,9 @@
     
 </html>
     
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'event': 'view_hotel', 'hotel': { 'items': [{ 'item_type': 'VIP', 'item_id': '1235', 'item_price': 10, 'quantity': 1 }] } });
+    
+</script>
